@@ -1,7 +1,7 @@
 /*
 www.codewars.com
 Javascript training
-Title: Find the odd int
+Title: Find the Odd Int
 */
 
 // Finished code

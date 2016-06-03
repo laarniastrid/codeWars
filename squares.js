@@ -1,7 +1,7 @@
 /*
 www.codewars.com
 Javascript training
-Title: You're a square!
+Title: You're a Square!
 */
 
 // Finished code

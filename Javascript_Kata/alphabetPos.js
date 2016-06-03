@@ -41,3 +41,16 @@ function alphabetPosition(text) {
       return temp;
   }).join(' ');
 }
+
+// Updated 02
+function alphabetPosition(text) {
+  var alpha = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  return text.replace(/[^A-Za-z]/g, '')
+    .toLowerCase()
+    .split(' ')
+    .join('')
+    .split('')
+    .map((entry) => {
+      return alpha.indexOf(entry) + 1;
+  }).join(' ');
+}

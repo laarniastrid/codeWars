@@ -33,3 +33,16 @@ function accum(s) {
   })
     .join('-')
 }
+
+// Updated 02
+function accum(s) {
+  return s.split('')
+    .map((entry, index) => {
+      var str = '';
+      for (var i = 0; i < index + 1; i++) {
+        str += i === 0 ? entry.toUpperCase() : entry.toLowerCase();
+      }
+      return str;
+  })
+    .join('-')
+}

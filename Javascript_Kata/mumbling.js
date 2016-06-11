@@ -19,3 +19,17 @@ function accum(s) {
   })
     .join('-')
 }
+
+// Updated 01
+function accum(s) {
+  return s.split('')
+    .map((entry, index) => {
+      var str = '';
+      for (var i = 0; i < index + 1; i++) {
+        if (i === 0) { str += entry.toUpperCase(); }
+        else { str += entry.toLowerCase(); }
+      }
+      return str;
+  })
+    .join('-')
+}

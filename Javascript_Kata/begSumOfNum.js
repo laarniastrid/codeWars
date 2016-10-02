@@ -5,7 +5,13 @@ Title: Beginner Series #3 Sum of Numbers
 */
 
 // Finished code
-function GetSum( a,b )
+function GetSum(a, b)
 {
-   return a !== b ? a + b : -1;
+  var min = Math.min(a, b),
+      max = Math.max(a, b),
+      result = 0;
+  for (var i = min; i < max + 1; i++) {
+      result += i;
+  }
+  return result;
 }
